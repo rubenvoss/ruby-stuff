@@ -3,6 +3,7 @@ text = gets.chomp
 #splits the input into an array of words
 words = text.split
 
+#makes a new hash with all counters at 0
 frequencies = Hash.new(0)
 
 words.each{|word|
@@ -13,12 +14,14 @@ words.each{|word|
     frequencies[word] += 1
 }
 
+#sorts the hash with the words by the frequency of each word
 frequencies = frequencies.sort_by do |word, num|
   num
 end
 
 frequencies.reverse!
 
+#prints out the words and frequencies
 frequencies.each do |word, num| 
   puts "#{word} #{num}"
 end
