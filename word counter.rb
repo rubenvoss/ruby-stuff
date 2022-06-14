@@ -14,6 +14,8 @@ words.each{|word|
     frequencies[word] += 1
 }
 
+#as
+
 #sorts the hash with the words by the frequency of each word
 frequencies = frequencies.sort_by do |word, num|
   num
