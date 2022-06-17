@@ -46,6 +46,7 @@ movies = {
       title = gets.chomp.to_sym
       if movies[title] == nil
         puts "movie is not in database"
+      #deletes movie and prints which ones are left
       else
         movies.delete(title)
         puts "movie deleted! these movies are left:"
