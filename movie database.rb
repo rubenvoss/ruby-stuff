@@ -52,8 +52,6 @@ movies = {
         puts "movie deleted! these movies are left:"
         puts movies
       end
-  y#
-  
   
     else
       puts "Error!"
